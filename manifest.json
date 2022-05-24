@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "CiteME!",
+  "version": "1.0",
+
+  "description": "A sidebar extension to generate reference for student without needing to open another window.",
+
+  "icons": {
+    "48": "icons/citeme_icon.png"
+  },
+
+  "sidebar_action": {
+    "default_icon": "icons/citeme_icon.png",
+    "default_title" : "CiteME!",
+    "default_panel": "sidebar/panel.html"
+  },
+
+  "permissions": ["activeTab", "tabs", "<all_urls>"]
+
+
+}
