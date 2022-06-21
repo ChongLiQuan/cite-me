@@ -14,8 +14,99 @@
         <div>
             <h1>Information About The Journal</h1>
             <!-- User enter information about the resource -->
+            <table>
+                <!-- Field 1 -->
+                <tr>
+                    <td> <label>Author Name:</label> <br/> </td>
+                </tr>
+                <tr>
+                    <td> <input type="text" id="txtAuthor"> </td>
+                </tr>
 
+                <!-- Field 2 -->
+                <tr>
+                    <td> <label>Date of Publication: </label> <br/> </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="number" id="txtDate" size="5" placeholder="Date" min="1" max="31" >
+                        <input type="number" id="txtMonth" size="5" placeholder="Month" min="1" max="12">
+                        <input type="number" id="txtYear" size="5" placeholder="Year" min="1990" max="2022" >
+                    </td>
+                </tr>
+
+                <!-- Field 3 -->
+                <tr>
+                    <td> <label>Article Title: </label> <br/> </td>
+                </tr>
+                <tr>
+                    <td> <input type="text" id="txtTitle" required> </td>
+                </tr>
+
+                <!-- Field 4 -->
+                <tr>
+                    <td> <label>Source URL: </label> <br/> </td>
+                </tr>
+                <tr>
+                    <td> <input type="text" id="txtURL"> </td>
+                </tr>
+
+                <!-- Field 5 -->
+                <tr>
+                    <td> <label>Date Accessed: </label> <br/> </td>
+                </tr>
+                <tr>
+                    <td> <input type="text" id="txtAccessed" placeholder="DD-MM-YYYY"> </td>
+                </tr>
+
+                <!-- Field 6 -->
+                <tr>
+                    <td> <label>Website Name: </label> <br/> </td>
+                </tr>
+                <tr>
+                    <td> <input type="text" id="txtWebName"> </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h1>Preferences</h1>
+                        <label>Citation Style:
+                            <select id="style">
+                                <option value="harvard" >Harvard</option>
+                                <option value="wikipedia" >Wikipedia</option>
+                                <option value="chicago" >Chicago</option>
+                                <option value="apa" >APA (7th ed.)</option>
+                                <option value="mla" >MLA (9th ed.)</option>
+                            </select>
+                        </label>
+
+                        <br/>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <br/> <button id="btnGenerateCitation">Generate Citation</button> </td>
+                </tr>
+
+            </table>
         </div>
+
+        <!-- Citation -->
+        <h1>Citation</h1>
+        <label><textarea id="txtCitationText" rows="4" cols="40"></textarea></label>
+        <br/><br/>
+        <button id="btnAddToCitationList">Save Citation</button>
+
+        <h1 class="saveButton">Save it to Citation List</h1>
+        <label>Saved Citation List <br/>
+            <textarea id="citationList" rows="10" cols="40"></textarea>
+        </label>
+        <br/>
+        <button id="btnClearCitationList">Clear All Citation</button>
+        <button id="btnDownloadCitationList">Download Citation</button>
+
     </div>
 
 
